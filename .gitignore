@@ -4,3 +4,10 @@ __pycache__/
 .env
 *.pt
 .DS_Store
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+demo.mp4
+/report.json

@@ -150,7 +150,7 @@ class Exercise(ABC):
         self.reps += 1
         record = RepRecord(
             number=self.reps,
-            timestamp=t - (self._t0 or t),
+            timestamp=t - (t if self._t0 is None else self._t0),
             duration=duration,
             peak_angle=self._peak,
             score=max(0.0, 100.0 - 20.0 * len(issues)),

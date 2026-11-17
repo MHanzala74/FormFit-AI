@@ -55,6 +55,8 @@ def test_pipeline_process_draws_and_counts():
     assert out.any()  # HUD pixels were drawn
     summary = pipe.finish()
     assert summary.total_reps == 2 and summary.avg_form_score == 100
+    assert summary.duration_seconds == pytest.approx((len(poses) - 1) * 0.15)
+    assert 0 < summary.reps[0].timestamp < summary.reps[1].timestamp
 
 
 def test_run_video_end_to_end_with_report(tmp_path):

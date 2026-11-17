@@ -63,7 +63,8 @@ class WorkoutPipeline:
 
     def finish(self) -> SessionSummary:
         self.exercise.finalize(self._t_last)
-        duration = self._t_last - (self._t_first or self._t_last)
+        start = self._t_last if self._t_first is None else self._t_first
+        duration = self._t_last - start
         return build_summary(self.exercise, duration, self.frames)
 
     def close(self) -> None:

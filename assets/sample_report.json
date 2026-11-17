@@ -1,0 +1,45 @@
+{
+  "exercise": "squat",
+  "started_at": "2026-11-17T12:28:12",
+  "duration_seconds": 11.05,
+  "frames": 222,
+  "total_reps": 3,
+  "avg_form_score": 93.33333333333333,
+  "best_rep": 1,
+  "worst_rep": 3,
+  "total_hold_seconds": 0.0,
+  "common_issues": [
+    {
+      "issue": "Keep your chest up",
+      "count": 1
+    }
+  ],
+  "reps": [
+    {
+      "number": 1,
+      "timestamp": 2.45,
+      "duration": 1.5000000000000002,
+      "peak_angle": 88.0,
+      "score": 100.0,
+      "issues": []
+    },
+    {
+      "number": 2,
+      "timestamp": 5.1,
+      "duration": 1.4999999999999996,
+      "peak_angle": 86.00000000000001,
+      "score": 100.0,
+      "issues": []
+    },
+    {
+      "number": 3,
+      "timestamp": 10.35,
+      "duration": 1.4499999999999993,
+      "peak_angle": 90.00000000000001,
+      "score": 80.0,
+      "issues": [
+        "Keep your chest up"
+      ]
+    }
+  ]
+}
