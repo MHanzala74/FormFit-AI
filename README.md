@@ -67,6 +67,12 @@ formfit analyze workout.mp4 -e lunge -o annotated.mp4 --report report.json --csv
 make web        # or: streamlit run src/formfit/app/streamlit_app.py
 ```
 
+### Docker (web app)
+
+```bash
+docker build -t formfit-ai . && docker run --rm -p 8501:8501 formfit-ai
+```
+
 ### Try it without a camera
 
 ```bash
@@ -156,9 +162,17 @@ Because exercises are driven by landmark dictionaries, the whole analysis stack 
 - [ ] Workout history dashboard across sessions
 - [ ] Real-footage demo clips
 
+## 📚 Docs
+
+[Architecture](docs/architecture.md) · [Exercise definitions](docs/exercises.md) · [FAQ & troubleshooting](docs/faq.md) · [Changelog](CHANGELOG.md)
+
+## 🔒 Privacy
+
+Everything runs locally: frames and videos are never uploaded, and voice feedback uses offline text-to-speech. See [SECURITY.md](SECURITY.md).
+
 ## 🤝 Contributing
 
-Contributions are welcome - see [CONTRIBUTING.md](CONTRIBUTING.md). Adding an exercise is the easiest first PR.
+Contributions are welcome - see [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md). Adding an exercise is the easiest first PR.
 
 ## 📄 License
 

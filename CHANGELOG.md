@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Added SECURITY, CODE_OF_CONDUCT, CITATION, FAQ, Dockerfile, pre-commit, EditorConfig and Dependabot config
+- Added voice coach and config tests
+
 ## 1.0.0
 
 - Restructured into a `src/formfit` package (core, pose, exercises, feedback, session, ui, app)
