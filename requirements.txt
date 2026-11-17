@@ -1,5 +1,11 @@
-opencv-python
-mediapipe
-ultralytics
-numpy
-pyttsx3
+# Core runtime dependencies (same as `pip install -e .`)
+opencv-python>=4.8
+numpy>=1.24
+mediapipe>=0.10
+pyttsx3>=2.90
+
+# Optional: YOLOv8-Pose backend  -> pip install -e ".[yolo]"
+# ultralytics>=8.0
+# Optional: Streamlit web app    -> pip install -e ".[web]"
+# streamlit>=1.30
+# pandas>=2.0
