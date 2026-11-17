@@ -1,4 +1,4 @@
-"""AI Gym Trainer & Posture Corrector - entry point.
+"""FormFit AI - AI Gym Trainer & Posture Corrector (entry point).
 
 Examples:
     python main.py --exercise squat
@@ -75,7 +75,7 @@ def main() -> int:
                 coach.say(msg)
             draw_hud(frame, analysis, exercise.name)
 
-            cv2.imshow("AI Gym Trainer", frame)
+            cv2.imshow("FormFit AI", frame)
             if cv2.waitKey(1) & 0xFF in (ord("q"), 27):
                 break
     finally:

@@ -1,4 +1,6 @@
-# AI Gym Trainer & Posture Corrector
+# FormFit AI
+
+> AI Gym Trainer & Posture Corrector
 
 Real-time exercise tracking and posture correction using **MediaPipe Pose** (or **YOLOv8-Pose**). The app tracks joint angles during exercises like squats and push-ups and gives live voice feedback on whether your form is correct.
 
@@ -22,7 +24,7 @@ Real-time exercise tracking and posture correction using **MediaPipe Pose** (or 
 ## Project Structure
 
 ```
-ai-gym-trainer/
+FormFit-AI/
 ├── main.py
 ├── requirements.txt
 ├── tests/
@@ -37,8 +39,8 @@ ai-gym-trainer/
 ## Setup
 
 ```bash
-git clone https://github.com/MHanzala74/ai-gym-trainer.git
-cd ai-gym-trainer
+git clone https://github.com/MHanzala74/FormFit-AI.git
+cd FormFit-AI
 python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
