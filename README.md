@@ -2,7 +2,7 @@
 
 Real-time exercise tracking and posture correction using **MediaPipe Pose** (or **YOLOv8-Pose**). The app tracks joint angles during exercises like squats and push-ups and gives live voice feedback on whether your form is correct.
 
-## Features (planned)
+## Features
 
 - Real-time pose estimation from webcam
 - Joint angle calculation (knee, hip, elbow, back)
@@ -25,6 +25,7 @@ Real-time exercise tracking and posture correction using **MediaPipe Pose** (or 
 ai-gym-trainer/
 ├── main.py
 ├── requirements.txt
+├── tests/
 ├── trainer/
 │   ├── pose_estimator.py
 │   ├── angles.py
@@ -41,17 +42,34 @@ cd ai-gym-trainer
 python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-python main.py
+python main.py --exercise squat
+```
+
+### Usage
+
+```bash
+python main.py --exercise squat                  # webcam, MediaPipe
+python main.py --exercise pushup --backend yolo  # YOLOv8-Pose
+python main.py --exercise squat --video clip.mp4 --no-voice
+```
+
+Film yourself from the **side** with your full body visible. Press `q` or `Esc` to quit.
+
+### Tests
+
+```bash
+pip install pytest
+pytest
 ```
 
 ## Roadmap
 
-- [ ] Pose estimation module
-- [ ] Angle calculation
-- [ ] Squat analysis + rep counter
-- [ ] Push-up analysis + rep counter
-- [ ] Voice feedback
-- [ ] YOLOv8-Pose backend
+- [x] Pose estimation module
+- [x] Angle calculation
+- [x] Squat analysis + rep counter
+- [x] Push-up analysis + rep counter
+- [x] Voice feedback
+- [x] YOLOv8-Pose backend
 - [ ] Demo GIF
 
 ## License
