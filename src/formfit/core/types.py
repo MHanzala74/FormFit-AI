@@ -57,6 +57,7 @@ class Analysis:
     form_score: float = 100.0          # running average over completed reps
     hold_seconds: float = 0.0          # plank only
     side: str | None = None            # which body side was analysed
+    announcement: str | None = None    # positive voice event, e.g. rep count
 
     @property
     def rep_completed(self) -> bool:
