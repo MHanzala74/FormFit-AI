@@ -17,6 +17,7 @@ class BicepCurl(Exercise):
     name = "curl"
     display_name = "Bicep Curl"
     description = "Range via elbow angle, strictness via upper-arm drift and torso sway."
+    primary_joint = "elbow"
     joints = ("shoulder", "elbow", "wrist", "hip")
 
     rest_angle = 150.0

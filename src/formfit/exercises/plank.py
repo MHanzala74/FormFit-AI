@@ -23,6 +23,7 @@ class Plank(Exercise):
     name = "plank"
     display_name = "Plank"
     description = "Hold time while the shoulder-hip-ankle line stays straight."
+    primary_joint = "hip"
     joints = ("shoulder", "hip", "ankle")
 
     MIN_BODY_LINE = 160.0

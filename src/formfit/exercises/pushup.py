@@ -34,6 +34,7 @@ class PushUp(Exercise):
     name = "pushup"
     display_name = "Push-up"
     description = "Depth via elbow angle, core stability via shoulder-hip-ankle line."
+    primary_joint = "elbow"
     joints = ("shoulder", "elbow", "wrist", "hip", "ankle")
 
     rest_angle = 160.0

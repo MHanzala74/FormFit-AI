@@ -44,6 +44,7 @@ class Exercise(ABC):
     display_name = "Exercise"
     description = ""
     joints: Sequence[str] = ()          # joints that must be visible on one side
+    primary_joint = "knee"              # joint labelled with the primary angle in the overlay
 
     rest_angle = 160.0                  # primary angle at rest; returning above it ends a rep
     start_angle = 140.0                 # dropping below this starts a rep
